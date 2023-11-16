@@ -1,7 +1,10 @@
-import React from 'react'
+import {useState} from 'react'
 import { Button } from '../components/ui/Button'
 
 const Topbar = () => {
+
+  const [selected, setSelected] = useState([])
+
   return (
     <div className='p-3 flex flex-row justify-between'>
         <div>
@@ -13,7 +16,7 @@ const Topbar = () => {
         </div>
 
         <div>
-            <Button 
+        <Button 
             text="LOGIN"
             color="red"
             padding=".5rem"

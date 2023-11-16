@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.backgroundImg{
+    background-image: url(./assets/images/dpool.jpg);
+}
