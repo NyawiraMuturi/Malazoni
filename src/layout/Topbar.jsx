@@ -1,9 +1,11 @@
 import {useState} from 'react'
+import {useNavigate} from "react-router-dom"
 import { Button } from '../components/ui/Button'
 
 const Topbar = () => {
+  const navigate = useNavigate()
+  const handleClick = () => navigate('/login')
 
-  const [selected, setSelected] = useState([])
 
   return (
     <div className='p-3 flex flex-row justify-between'>
@@ -17,6 +19,7 @@ const Topbar = () => {
 
         <div>
         <Button 
+            onClick={handleClick}
             text="LOGIN"
             color="red"
             padding=".5rem"
